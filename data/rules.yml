@@ -1,0 +1,9 @@
+version: "2.0"
+
+rules:
+
+- rule: Se despede sempre que alguem agradecer
+  steps:
+  - intent: thankyou
+  - action: utter_despedida
+

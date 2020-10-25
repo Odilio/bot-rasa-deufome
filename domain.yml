@@ -1,0 +1,54 @@
+version: "2.0"
+    
+intents:
+  - greet
+  - order_pizza
+  - list_tops
+  - list_size
+  - thankyou
+  
+entities:
+  - size
+  - tops
+  - qtd_tops
+
+responses:
+  utter_greet:
+  - text: "Oi! Bem vindo a Memes Pizza. Posso anotar seu pedido?"
+
+  utter_list_tops:
+  - text: "Temos diversos sabores: Calabresa, Frango, Atum e Bacon."
+
+  utter_list_sizes:
+  - text: "Temos pizza pequena, média e gramde"
+
+  utter_do_order:
+  - text: "Certo, pode fazer seu pedido."
+  
+  utter_confirm_order:
+  - text: "Posso confirmar seu pedido, pizza de {tops} tamanho {size}?"
+  
+  utter_size:
+  - text: "Qual tamanho de pizza você deseja?"
+  
+  utter_tops:
+  - text: "Qual sabor?"
+
+  utter_despedida:
+  - text: "Tchau! até a próxima! =) "
+
+
+slots:
+  size:
+    initial_value: null
+    type: text
+  tops:
+    initial_value: null
+    type: text
+  qtd_tops:
+    initial_value: null
+    type: text
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

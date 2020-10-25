@@ -1,0 +1,60 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Olá
+    - Oi
+    - Ea
+    - Hi
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: order_pizza
+  examples: |
+    - Gostaria de pedir uma pizza
+    - Eu quero uma pizza
+    - Estou querendo uma pizza
+    - Quero pedir uma pizza de [calabresa](tops) [tamanho família](size)
+    - Eu quero uma pizza [média](size) de [frango com catupiry](tops)
+    - Quero pizza
+    - Me traz uma pizza [pequena](size) de [atum](tops) e outra de [toscana](tops)
+    - Uma pizza [média](size) por favor
+    - Quero uma pizza de [frango com catupiry](tops)
+    - Quero uma pizza de [calabresa](tops) tamanho [medio](size)
+    - Gostaria de pedir uma pizza tamanho [pequena](size)
+    - Quero uma pizza tamanho [médio](size)
+    - Gostaria de uma pizza tamanho [pequena](size)
+    - Gostaria de uma pizza [média] (size) de [dois sabores](qtd_tops)
+    - Gostaria de uma pizza [grande] (size) de [dois sabores](qtd_tops)
+    - Quero uma pizza de [dois sabores](qtd_tops)
+  
+- intent: list_tops
+  examples: |
+    - Quais sabores de pizza tem?
+    - Quais são os sabores das pizzas?
+    - Tem pizza de que?
+    - Tem pizza de [atum](tops)?
+    - Tem de [calabresa](tops)?
+    - Quais tipos e pizza estão disponiveis?
+    - Quais os sabores que você tem?
+    - Vocês tem pizza de [frango](tops)?
+    - Quero uma lista de dois sabores
+
+- intent: list_size
+  examples: |
+    - Quais tamanhos de pizza tem?
+    - Quais são os tamanhos das pizzas?
+    - Tem pizza de que tamanho?
+    - Tem pizza tamanho [família](size)?
+    - Tem pizza [média](size)?
+    - Vocês tem pizza [pequena](size)?
+    - Tem pizza [grande](size)?
+
+- intent: thankyou
+  examples: |
+    - Obrigado!
+    - Vlw
+    - Muito obrigado
+    - Valeu
